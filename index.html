@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק כרטיסים רנדומלי</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>משחק כרטיסים</h1>
+        
+        <div class="card-display">
+            <div id="card-container" class="card-flip">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>לחץ על כפתור "שלוף כרטיס"</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img id="card-image" src="" alt="כרטיס משחק">
+                        <div class="card-number">כרטיס מספר: <span id="card-id"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+            <button id="draw-card" class="btn primary-btn">
+                <i class="fas fa-hand-paper"></i> שלוף כרטיס
+            </button>
+            <button id="reset-game" class="btn danger-btn">
+                <i class="fas fa-trash"></i> איפוס משחק
+            </button>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stats-item">
+                <i class="fas fa-check-circle"></i>
+                <span>כרטיסים שהוצגו: </span>
+                <span id="used-cards-count">0</span> / <span id="total-cards-count">100</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
